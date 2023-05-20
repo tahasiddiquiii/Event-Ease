@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-String uri = 'http://192.168.19.36:3000';
-// String uri = 'https://amazon-clone-server-tahasiddiqui.onrender.com';
+// String uri = 'http://192.168.1.5:3000';
+String uri = 'https://event-ease-server-tahasiddiquiii.onrender.com';
 
 class GlobalVariables {
   // COLORS
@@ -13,7 +13,7 @@ class GlobalVariables {
     stops: [0.5, 1.0],
   );
 
-  static const secondaryColor = Color.fromRGBO(255, 153, 0, 1);
+  static const secondaryColor = Color.fromARGB(255, 201, 152, 29);
   static const backgroundColor = Color.fromARGB(255, 249, 233, 209);
   static const Color greyBackgroundCOlor = Color(0xffebecee);
   static const selectedNavBarColor = Color.fromARGB(255, 158, 122, 3);
@@ -32,27 +32,22 @@ class GlobalVariables {
     {
       'title': 'Meetups',
       'image': 'assets/images/meetups.png',
-      'name': 'Tech Events',
     },
     {
       'title': 'Seminar',
       'image': 'assets/images/seminar.png',
-      'name': 'Seminar',
     },
     {
-      'title': 'conference',
+      'title': 'Conference',
       'image': 'assets/images/conference.png',
-      'name': 'General',
     },
     {
       'title': 'Hackathons',
       'image': 'assets/images/hackathons.png',
-      'name': 'Book Events',
     },
     {
       'title': 'Others',
       'image': 'assets/images/others.jpeg',
-      'name': 'Fation Events',
     },
   ];
 }

@@ -40,7 +40,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
   List<String> productCategories = [
     'Meetups',
     'Seminar',
-    'conference',
+    'Conference',
     'Hackathons',
     'Others'
   ];
@@ -150,7 +150,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
                 const SizedBox(height: 10),
                 CustomTextField(
                   controller: descriptionController,
-                  hintText: 'Description',
+                  hintText: 'Description and Venue',
                   maxLines: 7,
                 ),
                 const SizedBox(height: 10),

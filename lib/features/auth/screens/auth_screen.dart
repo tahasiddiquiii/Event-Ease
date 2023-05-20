@@ -54,24 +54,28 @@ class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: GlobalVariables.greyBackgroundCOlor,
+      backgroundColor: GlobalVariables.backgroundColor,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                "Welcome",
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.w500,
+              Center(
+                child: Container(
+                  alignment: Alignment.center,
+                  child: Image.asset(
+                    'assets/images/amazon_in.png',
+                    width: 270,
+                    height: 45,
+                    color: const Color.fromARGB(255, 203, 160, 2),
+                  ),
                 ),
               ),
               ListTile(
                 tileColor: _auth == Auth.signup
                     ? GlobalVariables.backgroundColor
-                    : GlobalVariables.greyBackgroundCOlor,
+                    : GlobalVariables.backgroundColor,
                 title: const Text(
                   "Create Account",
                   style: TextStyle(
@@ -114,6 +118,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         CustomTextField(
                           controller: _passwordController,
                           hintText: 'Password',
+                          obscureText: true,
                         ),
                         const SizedBox(
                           height: 10,
@@ -133,7 +138,7 @@ class _AuthScreenState extends State<AuthScreen> {
               ListTile(
                 tileColor: _auth == Auth.signin
                     ? GlobalVariables.backgroundColor
-                    : GlobalVariables.greyBackgroundCOlor,
+                    : GlobalVariables.backgroundColor,
                 title: const Text(
                   "Sign-In.",
                   style: TextStyle(
@@ -169,6 +174,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         CustomTextField(
                           controller: _passwordController,
                           hintText: 'Password',
+                          obscureText: true,
                         ),
                         const SizedBox(
                           height: 10,

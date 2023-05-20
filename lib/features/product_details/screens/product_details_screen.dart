@@ -169,10 +169,13 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                 vertical: 20,
                 horizontal: 10,
               ),
-              child: Text(
-                widget.product.name,
-                style: const TextStyle(
-                  fontSize: 15,
+              child: Center(
+                child: Text(
+                  widget.product.name,
+                  style: const TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
@@ -198,7 +201,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               padding: const EdgeInsets.all(8),
               child: RichText(
                 text: TextSpan(
-                  text: 'Deal Price: ',
+                  text: 'Event Ticket Price: ',
                   style: const TextStyle(
                     fontSize: 16,
                     color: Colors.black,
@@ -246,7 +249,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
               child: Text(
-                'Rate the Product',
+                'Rate the Event',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,

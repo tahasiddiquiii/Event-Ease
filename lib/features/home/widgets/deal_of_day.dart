@@ -60,10 +60,25 @@ class _DealOfDayState extends State<DealOfDay> {
                     const SizedBox(
                       height: 10,
                     ),
-                    Image.network(
-                      product!.images[0],
-                      height: 235,
-                      fit: BoxFit.fitHeight,
+                    Container(
+                      decoration: const BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromARGB(255, 146, 145, 142),
+                            offset: Offset(5.0, 5.0),
+                            blurRadius: 10.0,
+                            spreadRadius: 2.0,
+                          ),
+                        ],
+                      ),
+                      child: Image.network(
+                        product!.images[0],
+                        height: 235,
+                        fit: BoxFit.fitHeight,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
                     ),
                     Container(
                       padding: const EdgeInsets.only(
@@ -88,7 +103,13 @@ class _DealOfDayState extends State<DealOfDay> {
                         product!.name,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromARGB(255, 172, 115, 2)),
                       ),
+                    ),
+                    const SizedBox(
+                      height: 10,
                     ),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
@@ -113,10 +134,10 @@ class _DealOfDayState extends State<DealOfDay> {
                         top: 15,
                       ),
                       alignment: Alignment.topLeft,
-                      child: Text(
+                      child: const Text(
                         'See all deals',
                         style: TextStyle(
-                          color: Colors.cyan[800],
+                          color: Color.fromARGB(255, 143, 98, 0),
                         ),
                       ),
                     ),

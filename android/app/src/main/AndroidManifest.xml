@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.event_ease">
    <application
-        android:label="event_ease"
+        android:label="event ease"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

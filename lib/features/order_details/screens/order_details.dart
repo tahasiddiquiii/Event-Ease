@@ -245,7 +245,8 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
                   steps: [
                     Step(
                       title: const Text('Pending'),
-                      content: const Text('Your order is yet to be delivered.'),
+                      content: const Text(
+                          'Your Bill / ticket is yet to be delivered.'),
                       isActive: currentStep > 0,
                       state: currentStep > 0
                           ? StepState.complete
@@ -254,7 +255,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
                     Step(
                       title: const Text('Completed'),
                       content: const Text(
-                          'Your order has been delivered, you are yet to sign.'),
+                          'Your Bill / ticket has been delivered, you are yet to sign.'),
                       isActive: currentStep > 1,
                       state: currentStep > 1
                           ? StepState.complete
@@ -263,7 +264,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
                     Step(
                       title: const Text('Recived'),
                       content: const Text(
-                          'Your order has been delivered and signed by you.'),
+                          'Your Bill / ticket has been delivered and signed by you.'),
                       isActive: currentStep > 2,
                       state: currentStep > 2
                           ? StepState.complete
@@ -272,7 +273,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
                     Step(
                       title: const Text('Delivered'),
                       content: const Text(
-                          'Your order has been delivered and signed by you!'),
+                          'Your Bill / ticket has been delivered and signed by you!'),
                       isActive: currentStep >= 3,
                       state: currentStep >= 3
                           ? StepState.complete

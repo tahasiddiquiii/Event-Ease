@@ -35,13 +35,17 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Expanded(
                 child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(
+                        17), // Adjust the radius as needed
+                  ),
                   height: 42,
                   margin: const EdgeInsets.only(
                     left: 15,
                   ),
                   alignment: Alignment.topLeft,
                   child: Material(
-                    borderRadius: BorderRadius.circular(7),
+                    borderRadius: BorderRadius.circular(25),
                     elevation: 1,
                     child: TextFormField(
                       onFieldSubmitted: navigateToSearchScreen,
@@ -66,13 +70,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         border: const OutlineInputBorder(
                           borderRadius: BorderRadius.all(
-                            Radius.circular(7),
+                            Radius.circular(25),
                           ),
                           borderSide: BorderSide.none,
                         ),
                         enabledBorder: const OutlineInputBorder(
                           borderRadius: BorderRadius.all(
-                            Radius.circular(7),
+                            Radius.circular(25),
                           ),
                           borderSide: BorderSide(
                             color: Colors.black38,
@@ -118,7 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 10),
             const TopCategories(),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
             const CarouselImage(),
             const SizedBox(height: 10),
             const DealOfDay(),

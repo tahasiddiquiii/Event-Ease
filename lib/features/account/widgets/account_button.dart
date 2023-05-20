@@ -14,6 +14,14 @@ class AccountButton extends StatelessWidget {
         ),
         height: 40,
         decoration: BoxDecoration(
+          boxShadow: const [
+            BoxShadow(
+              color: Color.fromARGB(255, 146, 145, 142),
+              offset: Offset(5.0, 5.0),
+              blurRadius: 10.0,
+              spreadRadius: 1.0,
+            ),
+          ],
           border: Border.all(
             color: Colors.white,
             width: 0.0,

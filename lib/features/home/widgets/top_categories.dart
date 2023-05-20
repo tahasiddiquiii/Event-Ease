@@ -25,17 +25,17 @@ class TopCategories extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  decoration: const BoxDecoration(boxShadow: [
-                    BoxShadow(
-                      color: GlobalVariables.secondaryColor,
-                      offset: Offset(
-                        5.0,
-                        5.0,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color.fromARGB(255, 146, 145, 142),
+                        offset: Offset(5.0, 5.0),
+                        blurRadius: 10.0,
+                        spreadRadius: 0.3,
                       ),
-                      blurRadius: 10.0,
-                      spreadRadius: 2.0,
-                    ), //BoxShadow
-                  ]),
+                    ],
+                  ),
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(50),
@@ -47,11 +47,14 @@ class TopCategories extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 1,
+                ),
                 Text(
                   GlobalVariables.categoryImages[index]['title']!,
                   style: const TextStyle(
                     fontSize: 12,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ],
